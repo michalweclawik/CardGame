@@ -30,9 +30,8 @@ public class Snap extends CardGame {
             checkForEnd();
             hasToRun = false;
         }
-
         previousSymbol = currentSymbol;
-        currentSymbol=null;
+
     }timer.cancel();}
 
 
