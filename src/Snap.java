@@ -20,7 +20,7 @@ public class Snap extends CardGame {
             System.out.println( "Player " + Player.player  + " please press enter");
             Scanner scanner = new Scanner(System.in);
             scanner.nextLine();
-            Card2 currentCard = dealCard();
+            Card currentCard = dealCard();
             currentSymbol = currentCard.getSymbol();
 
             System.out.println(currentCard);

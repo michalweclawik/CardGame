@@ -3,14 +3,14 @@ import java.util.*;
 
 public class CardGame {
 
-    private final ArrayList<Card2> deckOfCards = new ArrayList<>();
+    private final ArrayList<Card> deckOfCards = new ArrayList<>();
 
     public CardGame() {
 
         try {
         for (String suit : CardUtilis.CardSuit) {
             for (String i : CardUtilis.CardUtils.keySet()) {
-            Card2 card = new Card2(suit, i, CardUtilis.CardUtils.get(i));
+            Card card = new Card(suit, i, CardUtilis.CardUtils.get(i));
             deckOfCards.add(card);
             }
 
@@ -19,7 +19,7 @@ public class CardGame {
         }
     }
 
-    public ArrayList<Card2> getDeck() {
+    public ArrayList<Card> getDeck() {
         return deckOfCards;
     }
 
@@ -27,16 +27,16 @@ public class CardGame {
 //        return deckOfCards.get(deckOfCards.size()-1);
 //    }
 
-    public Card2 dealCard(){
+    public Card dealCard(){
 
         return deckOfCards.remove(0);
     }
 
-    public List<Card2> sortDeckInNumberOrder() {
+    public List<Card> sortDeckInNumberOrder() {
         deckOfCards.sort( ( a, b ) -> a.getValue() - b.getValue() );
         return deckOfCards;
     }
-    public List<Card2> sortDeckIntoSuits() {
+    public List<Card> sortDeckIntoSuits() {
         deckOfCards.sort( ( a, b ) -> a.getSuit().compareTo( b.getSuit() ) );
         return deckOfCards;
     }

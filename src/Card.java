@@ -1,6 +1,6 @@
 
 
-public class Card2 {
+public class Card {
 
     private final String suit;
 
@@ -9,7 +9,7 @@ public class Card2 {
     private final int value;
 
 
-    public Card2 (String suit, String symbol, int value ) {
+    public Card(String suit, String symbol, int value ) {
 
         this.suit = suit;
         this.symbol = symbol;
