@@ -43,7 +43,7 @@ public void checkForEnd(){Scanner userInput = new Scanner(System.in);
 
             System.out.println("Game finish player: " + Player.player  + " lost!!! ");
             Player.switchPlayer();
-            System.out.println("Game finish player: " + Player.player  + " won!!!!! ");
+            System.out.println("Game finish player: " + Player.player  + " won!!!! ");
             System.exit(0);
         }
     };
